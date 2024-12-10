@@ -23,7 +23,7 @@ const UpdateCofe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(formData)
-    fetch(`http://localhost:4000/coffee-update/${coffee._id}`, {
+    fetch(`https://coffee-server-bay-two.vercel.app/coffee-update/${coffee._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

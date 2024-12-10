@@ -20,7 +20,7 @@ const AddCoffee = () => {
     e.preventDefault();
 
     // post
-    fetch("http://localhost:4000/coffee", {
+    fetch("https://coffee-server-bay-two.vercel.app/coffee", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

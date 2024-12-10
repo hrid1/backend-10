@@ -9,7 +9,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
   const handleDelete = (id) => {
     const isConfirm = confirm(`Are You sure to delete ? ${id}`);
     if (isConfirm) {
-      fetch(`http://localhost:4000/coffee/${id}`, {
+      fetch(`https://coffee-server-bay-two.vercel.app/coffee/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
